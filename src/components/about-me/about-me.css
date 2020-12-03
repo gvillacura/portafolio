@@ -1,0 +1,113 @@
+.about-container{
+    background-image: url(../../media/Ellipse.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 5% 0;
+    height: 100vh;
+}
+
+.about-container>h2{
+    text-align: center;
+    color: #6AAFA7;
+    font-weight: bold;
+    font-size: 2.938rem;
+    padding: 5% 0 2% 0;
+    margin: 0;
+}
+
+.info-container{
+    display: flex;
+    margin: 0 15%;
+}
+
+.info-container>img{
+    height: 23rem;
+}
+
+.info-container>div{
+    margin: 5% 0;
+}
+
+.info-container>div>:nth-child(1)>p{
+    background-color: white;
+    font-size: 1.25rem;
+    color: rgba(65, 65, 65, 0.69);
+    font-weight: 500;
+}
+
+.link-container{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.875rem;
+}
+
+.link-container>p{
+    font-size: 1rem;
+    color: #FF2674;
+    margin-left: 2%;
+}
+
+@media (min-width: 1300px){
+    .info-container{
+        margin: 0 22%;
+    }
+
+    .info-container>div{
+        margin: 1% 0;
+    }
+
+}
+
+@media (max-width: 425px){
+    .about-container{
+        background-image: none;
+        height: auto;
+    }
+
+    .info-container{
+        background-image: url(../../media/Ellipse.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        margin: 0;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .info-container>img{
+        width: 8rem;
+        height: auto;
+        align-self: center;
+    }
+
+    .about-container>h2{
+        padding: 0 0 5% 0;
+        font-size: 1.25rem;
+    }
+
+    .info-container>div>:nth-child(1){
+        background-color: white;
+    }
+
+    .info-container>div>:nth-child(1)>p{
+        font-size: 1rem;
+        margin: 0 2%;
+    }
+
+    .info-container>img{
+        width: 6rem;
+    }
+
+    .link-container{
+        justify-content: center;
+        padding-top: 4%;
+    }
+
+    .link-container>p{
+        margin: 1%;
+        font-size: 0.875rem;
+    }
+}

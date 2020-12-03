@@ -1,0 +1,40 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 0 5% 0;
+}
+
+.contact-container>h2{
+    color: #6AAFA7;
+    font-weight: bold;
+    font-size: 47px;
+    padding: 5% 0 2% 0;
+    margin: 0 5%;
+}
+
+.contact-container>div{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    column-gap: 5%;
+}
+
+.network-container>svg{
+    color: #D68600;
+    font-size: 5rem;
+}
+
+@media (max-width: 425px){
+    .contact-container>h2{
+        font-size: 1.25rem;
+    }
+
+    .contact-container>div{
+        margin-top: 3%;
+    }
+    
+    .network-container>svg{
+        font-size: 2.813rem;
+    }
+}

@@ -1,0 +1,75 @@
+.abilities-container>h2{
+    text-align: center;
+    color: #6AAFA7;
+    font-weight: bold;
+    font-size: 47px;
+    padding: 5% 0 2% 0;
+    margin: 0 5%;
+}
+
+.abilities-container>div{
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+.abilities-container>div>hr{
+    border: none;
+    border-left: 1px solid #FF2674;
+    height: 22rem;
+    width: 1px;
+    margin: 0 5%;
+    background: #FF2674;
+}
+
+.tech-abilities, .soft-abilities{
+    display: grid;
+    width: 20rem;
+    grid-template-columns: auto auto;
+    column-gap: 35%;
+}
+
+.tech-abilities>div, .soft-abilities>div{  
+    text-align: center;
+}
+
+.tech-abilities>div>svg, .soft-abilities>div>svg{
+    color: #D68600;
+    font-size: 3.75rem;
+}
+
+.tech-abilities>div>p, .soft-abilities>div>p{
+    color: #241F1F;
+    font-size: 1rem;
+}
+
+@media (max-width: 425px){
+
+    .abilities-container>h2{
+        font-size: 1.25rem;
+    }
+    
+    .abilities-container>div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .abilities-container>div>hr{
+        height: 1px;
+        width: auto;
+    }
+
+    .tech-abilities, .soft-abilities{
+        width: auto;
+        column-gap: 0;
+        margin: 6% 0;
+    }
+
+    .tech-abilities>div>svg, .soft-abilities>div>svg{
+        font-size: 2.938rem;
+    }
+    
+
+}
+
+
