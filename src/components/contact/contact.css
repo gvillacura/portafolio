@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 0 0 5% 0;
+    padding: 0 0 5% 0;
 }
 
 .contact-container>h2{
@@ -20,10 +20,32 @@
     column-gap: 5%;
 }
 
-.network-container>svg{
+.network-container>svg {
+    color: #D68600;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.network-container>svg:hover {
+    color: #728E23;
+}
+
+.network-container>a>svg{
     color: #D68600;
     font-size: 5rem;
 }
+
+.network-container>a>svg:hover {
+    color: #728E23;
+}
+
+.contact-container>:nth-child(3){
+    display: block;
+    font-size: 1.25rem;
+    color: #487671;
+    font-weight: bold;
+}
+
 
 @media (max-width: 425px){
     .contact-container>h2{
@@ -35,6 +57,10 @@
     }
     
     .network-container>svg{
-        font-size: 2.813rem;
+        font-size: 3.413rem;
+    }
+
+    .network-container>a>svg{
+        font-size: 3.413rem;
     }
 }

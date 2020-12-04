@@ -3,9 +3,11 @@ import "../about-me/about-me.css";
 import { Icon } from "@iconify/react";
 import downloadFill from "@iconify/icons-ri/download-fill";
 import perfil from "../../media/perfil-img.png";
+import pdf from "../../documents/Geraldine-Villacura-CV.pdf";
+
 const About = () => {
   return (
-    <div className="about-container">
+    <div className="about-container" id="sobre-mi">
       <h2>SOBRE MÍ</h2>
       <div className="info-container">
         <img src={perfil} alt="perfil-img" />
@@ -21,8 +23,10 @@ const About = () => {
             </p>
           </div>
           <div className="link-container">
-            <Icon icon={downloadFill} />
-            <p>DESCARGAR CURRICULUM</p>
+            <a href={pdf} target="_blank">
+              <Icon icon={downloadFill} />
+              <p>VER CURRICULUM</p>
+            </a>
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ import fileCode from "@iconify/icons-fa-solid/file-code";
 
 const Projects = () => {
   return (
-    <div className="projects-container">
+    <div className="projects-container" id="proyectos">
       <h2>MIS PROYECTOS</h2>
       <div>
         <div>
@@ -26,14 +26,21 @@ const Projects = () => {
               <strong>Tecnologías: React.js - CSS.</strong>
             </p>
             <div>
-              <button type="button">
-                <Icon icon={playCircle} />
-                Demo
-              </button>
-              <button type="button">
-                <Icon icon={fileCode} />
-                Code
-              </button>
+              <a target="blank" href="https://comida-para-todos.netlify.app/">
+                <button type="button">
+                  <Icon icon={playCircle} />
+                  Demo
+                </button>
+              </a>
+              <a
+                target="blank"
+                href="https://github.com/gvillacura/Comida-para-todos"
+              >
+                <button type="button">
+                  <Icon icon={fileCode} />
+                  Code
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -52,14 +59,24 @@ const Projects = () => {
               <strong>Tecnologías: JavaScript - CSS.</strong>
             </p>
             <div>
-              <button type="button">
-                <Icon icon={playCircle} />
-                Demo
-              </button>
-              <button type="button">
-                <Icon icon={fileCode} />
-                Code
-              </button>
+              <a
+                target="blank"
+                href="https://gvillacura.github.io/SCL014-data-lovers/src/"
+              >
+                <button type="button">
+                  <Icon icon={playCircle} />
+                  Demo
+                </button>
+              </a>
+              <a
+                target="blank"
+                href="https://github.com/gvillacura/SCL014-data-lovers"
+              >
+                <button type="button">
+                  <Icon icon={fileCode} />
+                  Code
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -72,20 +89,30 @@ const Projects = () => {
             <p>
               Red social para personas interesadas en diferentes tipos de arte.
               Puedes autentificarte, registrarte, publicar y comentar post
-              gracias a la impementación de firebase.
+              gracias a la implementación de firebase.
             </p>
             <p>
               <strong>Tecnologías: JavaScript - CSS - Firebase.</strong>
             </p>
             <div>
-              <button type="button">
-                <Icon icon={playCircle} />
-                Demo
-              </button>
-              <button type="button">
-                <Icon icon={fileCode} />
-                Code
-              </button>
+              <a
+                target="blank"
+                href="https://fabianesantos.github.io/SCL014-social-network/src/index.html#/inicio-sesion"
+              >
+                <button type="button">
+                  <Icon icon={playCircle} />
+                  Demo
+                </button>
+              </a>
+              <a
+                target="blank"
+                href="https://github.com/gvillacura/SCL014-social-network/tree/geraldineV"
+              >
+                <button type="button">
+                  <Icon icon={fileCode} />
+                  Code
+                </button>
+              </a>
             </div>
           </div>
         </div>

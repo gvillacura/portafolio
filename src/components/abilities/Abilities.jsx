@@ -6,6 +6,7 @@ import css3Icon from "@iconify/icons-simple-icons/css3";
 import githubFill from "@iconify/icons-ri/github-fill";
 import firebaseIcon from "@iconify/icons-cib/firebase";
 import reactjsFill from "@iconify/icons-ri/reactjs-fill";
+import nodeIcon from "@iconify-icons/fa-brands/node";
 import teamFill from "@iconify/icons-ri/team-fill";
 import machineLearningModel from "@iconify/icons-carbon/machine-learning-model";
 import arrowCircleRycycle from "@iconify/icons-si-glyph/arrow-circle-rycycle";
@@ -15,7 +16,7 @@ import languageJavascript from "@iconify/icons-mdi/language-javascript";
 
 const Abilities = () => {
   return (
-    <div className="abilities-container">
+    <div className="abilities-container" id="habilidades">
       <h2>TECNOLOGÍAS Y HABILIDADES BLANDAS</h2>
       <div>
         <div className="tech-abilities">
@@ -42,6 +43,10 @@ const Abilities = () => {
           <div>
             <Icon icon={reactjsFill} />
             <p>React.js</p>
+          </div>
+          <div>
+            <Icon icon={nodeIcon} />
+            <p>Node.js</p>
           </div>
         </div>
         <hr></hr>

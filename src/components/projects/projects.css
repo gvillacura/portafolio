@@ -27,7 +27,11 @@
     color: #2C2A2A;
 }
 
-.info-project-container>div>button{
+.info-project-container>div>a{
+    text-decoration: none;
+}
+
+.info-project-container>div>a>button{
     display: inline-flex;
     align-items: center;
     width: 9.875rem;
@@ -39,9 +43,18 @@
     font-size: 1.363rem;
     margin: 0 8% 0 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 
-.info-project-container>div>button>svg{
+.info-project-container>div>a>button:hover{
+    background:  #D68600;
+}
+
+.info-project-container>div>a>button:focus{
+   outline: none;
+}
+
+.info-project-container>div>a>button>svg{
     font-size: 1.6rem;
     margin: 0 12% 0 0;
 }
@@ -70,6 +83,7 @@
         flex-direction: column;
         object-fit: cover;
         scroll-snap-align: center;
+        margin: 5% 10% !important;
     }
 
     .projects-container>div>div>:nth-child(1){
@@ -93,7 +107,7 @@
         font-size: 1rem;
     }
 
-    .info-project-container>div>button{
+    .info-project-container>div>a>button{
         margin: 0 0 5% 0;
         height: 2.813rem;
         font-size: 1.263rem;
@@ -101,5 +115,16 @@
 
     .projects-container>div>div>div>img{
         width: 13rem;
+    
+    }
+  
+}
+
+@media (max-width: 975px){
+    .projects-container>div>div {
+        margin: 5% 3%;
+    }
+    .info-project-container>div>a>button{
+        margin: 0 0 5% 2%;
     }
 }

@@ -1,10 +1,5 @@
 .about-container{
-    background-image: url(../../media/Ellipse.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     margin: 5% 0;
-    height: 100vh;
 }
 
 .about-container>h2{
@@ -23,6 +18,7 @@
 
 .info-container>img{
     height: 23rem;
+    margin: 0 5rem 0 2rem;
 }
 
 .info-container>div{
@@ -30,31 +26,36 @@
 }
 
 .info-container>div>:nth-child(1)>p{
-    background-color: white;
+    background-color: #FFFCFC;
     font-size: 1.25rem;
     color: rgba(65, 65, 65, 0.69);
     font-weight: 500;
 }
 
-.link-container{
+.link-container>a{
+    text-decoration: none;
     display: flex;
     align-items: center;
     padding-bottom: 1.875rem;
+    width: 100%;
 }
 
-.link-container>p{
+.link-container>a>p{
     font-size: 1rem;
     color: #FF2674;
     margin-left: 2%;
 }
+.link-container>a>svg{
+    color: #FF2674;
+}
 
 @media (min-width: 1300px){
     .info-container{
-        margin: 0 22%;
+        margin: 0 13%;
     }
 
     .info-container>div{
-        margin: 1% 0;
+        margin: 1% 5rem 0 0;
     }
 
 }
@@ -66,10 +67,6 @@
     }
 
     .info-container{
-        background-image: url(../../media/Ellipse.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size:cover;
         margin: 0;
         height: fit-content;
         display: flex;
@@ -80,6 +77,7 @@
     .info-container>img{
         width: 8rem;
         height: auto;
+        margin: 0;
         align-self: center;
     }
 
@@ -94,7 +92,7 @@
 
     .info-container>div>:nth-child(1)>p{
         font-size: 1rem;
-        margin: 0 2%;
+        margin: 0 4%;
     }
 
     .info-container>img{
@@ -106,8 +104,26 @@
         padding-top: 4%;
     }
 
+    .link-container>a{
+        padding-left: 2%;
+    }
+
     .link-container>p{
         margin: 1%;
         font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 975px){
+    .info-container {
+        margin: 0 0%;
+    }
+
+    .info-container>img {
+        margin: 0 2% 0 3%;
+    }
+
+    .info-container>div>:nth-child(1)>p {
+        padding-right: 3%;
     }
 }
